@@ -1,0 +1,20 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.iris-plan > section {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.iris-plan > section > :is(h4, .iris-price) {
+  text-align: center;
+}
+
+.iris-plan > section > ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
