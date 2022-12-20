@@ -17,13 +17,14 @@
   <meta name="twitter:card" content="summary">
   <!-- <link rel="icon" href="./favicon.ico"> -->
   <!-- <meta name="theme-color" content="#ffffff"> -->
-
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css">
   <!-- <script async src="./src/js/index.js"></script> -->
 </head>
 
 <body>
-  <section>
+  <section class="container">
     <h1>Irisへようこそ！</h1>
     <p>Iris(アイリス)はメールアドレス不要で気軽に話せる基本料金無料の招待制通話ツールです。</p>
     <section>
@@ -54,7 +55,7 @@
     </section>
     <section>
       <h2>嬉しいプラン加入特典</h2>
-      <p>Irisは無料で利用できますが、定額制のプランに加入することで運営・開発をサポート出来ます！</p>
+      <p>Irisは無料で利用できますが、プランに加入することで運営・開発をサポート出来ます！</p>
       <p>更にIrisではプランに応じていくつかの特典を得られます！</p>
       <p><small>※プラン内容は現在検討中であり変更する可能性があります。</small></p>
       <section>
@@ -68,92 +69,92 @@
       <section>
         <h3>プラン一覧<s>(ゴママヨ)</s></h3>
         <p>以下の金額をBOOTHで支払えます！</p>
-        <div class="plan">
-          <section>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 justify-content-center iris-plan">
+          <section class="p-2 col border">
             <h4>Iris Lite</h4>
             <ul>
               <li>Liteバッジ</li>
             </ul>
-            <p>&yen; 100</p>
+            <p class="border-top m-0 pt-2 iris-price">&yen; 100</p>
           </section>
-          <section>
+          <section class="p-2 col border">
             <h4>Iris Fan</h4>
             <ul>
               <li>Fanバッジ</li>
               <li>広告非表示</li>
             </ul>
-            <p>&yen; 300</p>
+            <p class="border-top m-0 pt-2 iris-price">&yen; 300</p>
           </section>
-          <section>
+          <section class="p-2 col border">
             <h4>Iris Member</h4>
             <ul>
               <li>Memberバッジ</li>
               <li>広告非表示</li>
               <li>メンバーページに名前の掲載</li>
             </ul>
-            <p>&yen; 500</p>
+            <p class="border-top m-0 pt-2 iris-price">&yen; 500</p>
           </section>
-          <section>
+          <section class="p-2 col border">
             <h4>Iris Plus</h4>
             <ul>
               <li>Plusバッジ</li>
               <li>広告非表示</li>
               <li>メンバーページに名前の掲載</li>
             </ul>
-            <p>&yen; 1000</p>
+            <p class="border-top m-0 pt-2 iris-price">&yen; 1000</p>
           </section>
-          <section>
+          <section class="p-2 col border">
             <h4>Iris Pro</h4>
             <ul>
               <li>Proバッジ</li>
               <li>広告非表示</li>
               <li>メンバーページに名前の掲載</li>
             </ul>
-            <p>&yen; 2500</p>
+            <p class="border-top m-0 pt-2 iris-price">&yen; 2500</p>
           </section>
         </div>
       </section>
       <section>
         <h3>支払い方法</h3>
         <p>BOOTH経由で以下の方法でお支払いできます！</p>
-        <table aria-label="支払い方法一覧">
+        <table class="table" aria-label="支払い方法一覧">
           <tbody>
             <tr>
-              <th>PayPal</th>
+              <th scope="row">PayPal</th>
               <td>
-                <p>PayPalを利用して安全に決済をすることが可能です。</p>
-                <p>JCB/アメリカン・エキスプレスはこちらを選択するとご利用いただけます。</p>
-                <p>手数料は無料です。</p>
+                PayPalを利用して安全に決済をすることが可能です。<br>
+                JCB/アメリカン・エキスプレスはこちらを選択するとご利用いただけます。<br>
+                手数料は無料です。
               </td>
             </tr>
             <tr>
-              <th>クレジットカード</th>
+              <th scope="row">クレジットカード</th>
               <td>
-                <p>MASTERのカードを使って一括払いで対応しています。</p>
-                <p>対応しているプリペイド系カードはバンドルカード、Kyash、<s>6㌘</s>等です。</p>
-                <p>手数料は無料です。</p>
+                MASTERのカードを使って一括払いで対応しています。<br>
+                対応しているプリペイド系カードはバンドルカード、Kyash、<s>6㌘</s>等です。
+                手数料は無料です。
               </td>
             </tr>
             <tr>
-              <th>楽天ペイ</th>
+              <th scope="row">楽天ペイ</th>
               <td>
-                <p>楽天IDからスムーズに支払えます。</p>
-                <p>JCB/楽天ポイントの利用も可能なので🉐かも。</p>
-                <p>手数料は無料です。</p>
+                楽天IDからスムーズに支払えます。<br>
+                JCB/楽天ポイントの利用も可能なので🉐かも。<br>
+                手数料は無料です。
               </td>
             </tr>
             <tr>
-              <th>銀行振込</th>
+              <th scope="row">銀行振込</th>
               <td>
-                <p>ATMやネットバンキングでお支払い頂けます。</p>
-                <p>金融機関により別途手数料が発生します。</p>
+                ATMやネットバンキングでお支払い頂けます。<br>
+                金融機関により別途手数料が発生します。
               </td>
             </tr>
             <tr>
-              <th>コンビニ決済</th>
+              <th scope="row">コンビニ決済</th>
               <td>
-                <p>ローソン、ファミリーマート、ミニストップ、セイコーマートの4社の各店舗にある決済端末からお支払い頂けます。支払いは現金のみです。</p>
-                <p>手数料は3000円未満は110円、それ以上は無料です。</p>
+                ローソン、ファミリーマート、ミニストップ、セイコーマートの4社の各店舗にある決済端末からお支払い頂けます。支払いは現金のみです。<br>
+                手数料は3000円未満は110円、それ以上は無料です。
               </td>
             </tr>
           </tbody>
